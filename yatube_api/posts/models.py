@@ -33,6 +33,7 @@ class Post(models.Model):
         related_name="posts", blank=True, null=True, verbose_name='Группа')
 
     class Meta:
+        ordering = ('pub_date',)
         verbose_name = 'Пост'
         verbose_name_plural = 'Посты'
 
